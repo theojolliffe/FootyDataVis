@@ -1,0 +1,16 @@
+// https://observablehq.com/@theojolliffe/spurs-positions-v-southampton
+
+<div id="observablehq-5dde9c37">
+  <div class="observablehq-ledge"></div>
+  <div class="observablehq-chart"></div>
+  <div class="observablehq-ledge2"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@theojolliffe/spurs-positions-v-southampton.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "ledge") return Inspector.into("#observablehq-5dde9c37 .observablehq-ledge")();
+    if (name === "chart") return Inspector.into("#observablehq-5dde9c37 .observablehq-chart")();
+    if (name === "ledge2") return Inspector.into("#observablehq-5dde9c37 .observablehq-ledge2")();
+  });
+</script>

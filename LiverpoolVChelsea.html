@@ -1,0 +1,16 @@
+// https://observablehq.com/@theojolliffe/liverpool-positions-v-chelsea
+
+<div id="observablehq-51abd45b">
+  <div class="observablehq-ledge"></div>
+  <div class="observablehq-ledge2"></div>
+  <div class="observablehq-chart"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@theojolliffe/liverpool-positions-v-chelsea.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "ledge") return Inspector.into("#observablehq-51abd45b .observablehq-ledge")();
+    if (name === "ledge2") return Inspector.into("#observablehq-51abd45b .observablehq-ledge2")();
+    if (name === "chart") return Inspector.into("#observablehq-51abd45b .observablehq-chart")();
+  });
+</script>

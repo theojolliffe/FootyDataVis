@@ -1,0 +1,22 @@
+// https://observablehq.com/@theojolliffe/milan-skriniar
+
+<div id="observablehq-3c9f3657">
+  <div class="observablehq-legend"></div>
+  <div class="observablehq-chart"></div>
+  <div class="observablehq-viewof-mapShows"></div>
+  <div class="observablehq-viewof-dd2"></div>
+  <div class="observablehq-viewof-dd3"></div>
+  <div class="observablehq-tooltip"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@theojolliffe/milan-skriniar.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "legend") return Inspector.into("#observablehq-3c9f3657 .observablehq-legend")();
+    if (name === "chart") return Inspector.into("#observablehq-3c9f3657 .observablehq-chart")();
+    if (name === "viewof mapShows") return Inspector.into("#observablehq-3c9f3657 .observablehq-viewof-mapShows")();
+    if (name === "viewof dd2") return Inspector.into("#observablehq-3c9f3657 .observablehq-viewof-dd2")();
+    if (name === "viewof dd3") return Inspector.into("#observablehq-3c9f3657 .observablehq-viewof-dd3")();
+    if (name === "tooltip") return Inspector.into("#observablehq-3c9f3657 .observablehq-tooltip")();
+  });
+</script>
